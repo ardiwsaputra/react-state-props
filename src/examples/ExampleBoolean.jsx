@@ -5,12 +5,16 @@ function ExampleBoolean() {
   const [isActive, setIsActive] = useState(false);
 
   const toggleActive = () => {
-    setIsActive(!isActive);
+    setIsActive(prevState => !prevState);
   };
+
+  // const toggleActive = () => {
+  //   setIsActive(!isActive);
+  // };
 
   return (
     <div>
-      <Button onClick={toggleActive} variant={isActive ? 'error' : 'primary'}>
+      <Button onClick={toggleActive}>
         {isActive ? 'Active' : 'Inactive'}
       </Button>
     </div>

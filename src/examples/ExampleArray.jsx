@@ -16,7 +16,7 @@ function ExampleArray() {
           <li key={todo}><Typography>{`${index+1}. ${todo}`}</Typography></li>
         ))}
       </ul>
-      <Button onClick={() => addTodo('New Todo')}>Add Todo</Button>
+      <Button onClick={() => addTodo('Tidur')}>Add Todo</Button>
     </div>
   );
 }
